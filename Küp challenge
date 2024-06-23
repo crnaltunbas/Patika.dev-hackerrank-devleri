@@ -1,0 +1,14 @@
+
+    x = int(input("Bir sayı giriniz:"))
+    y = int(input("Bir sayı giriniz:"))
+    z = int(input("Bir sayı giriniz:"))
+    n = int(input("Bir sayı giriniz:"))
+    valid_permutations = []
+    for i in [0, x]:
+        for j in [0, y]:
+            for k in [0, z]:
+                arr = [i, j, k ]
+                if sum(arr) != n:
+                    valid_permutations.append(arr)
+                    
+    print(valid_permutations)
