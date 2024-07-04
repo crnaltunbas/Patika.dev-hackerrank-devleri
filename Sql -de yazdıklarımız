@@ -104,3 +104,16 @@ WHERE first_name = 'Penelope' AND last_name = 'Monroe' OR first_name = 'Joe';
 --WHERE first_name LIKE 'A%'
 
 --SELECT COUNT(DISTINCT first_name) FROM actor
+
+
+--ORDER BY
+--SELECT * FROM film 
+--ORDER BY title ASC;--ARTAN BİR ŞEKİLDE SIRALAR. DESC YAZSAYDIK AZALAN BİR ŞEKİLDE SIRALARDI.
+-- ASC VEYA DESC YAZMASAYDIK OTOMATİK OLARAK ARTAN BİR ŞEKİLDE SIRALARDI.
+
+--SELECT title ,rental_rate,length FROM film
+--ORDER BY rental_rate ASC, length DESC;
+
+--SELECT title ,rental_rate,length FROM film
+--WHERE title LIKE 'A%'
+--ORDER BY rental_rate ASC, length DESC;
