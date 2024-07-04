@@ -58,3 +58,31 @@ WHERE first_name = 'Penelope' AND last_name = 'Monroe' OR first_name = 'Joe';
 --SELECT * FROM film 
 --WHERE replacement_cost NOT IN (10.99,12.99,16.99);
 
+--LIKE & ILIKE
+
+--SELECT * FROM customer
+--WHERE first_name LIKE 'Ma%';
+
+--SELECT * FROM customer
+--WHERE first_name LIKE '%y';
+
+--SELECT * FROM customer 
+--WHERE first_name LIKE 'A%y'
+
+--SELECT * FROM customer 
+--WHERE first_name LIKE 'A%';
+
+--SELECT * FROM customer 
+--WHERE first_name LIKE 'a%';
+
+--SELECT * FROM customer 
+--WHERE first_name ILIKE 'a%';
+
+--SELECT * FROM customer 
+--WHERE first_name LIKE 'J_an'; -- _ tek karakteri belirtir.
+ 
+--SELECT * FROM actor
+--WHERE first_name ~~ 'A%'; -- ~~ LIKE anlamına gelmektedir.
+
+--SELECT * FROM actor
+--WHERE first_name ~~* 'b%'; -- ~~* ILIKE anlamına gelmektedir.
