@@ -151,3 +151,34 @@ WHERE first_name = 'Penelope' AND last_name = 'Monroe' OR first_name = 'Joe';
 
 --SELECT MAX (length) FROM film
 --where rental_rate = 4.99;
+
+
+--GROUP BY
+
+--SELECT rental_rate, MAX (length) FROM film
+--GROUP BY rental_rate;
+
+
+
+--SELECT rental_rate , COUNT(length) FROM film
+--GROUP BY rental_rate;
+
+
+--SELECT rating, COUNT(*) FROM film
+--GROUP BY rating ;
+
+--SELECT replacement_cost, MIN(length) FROM film 
+--GROUP BY replacement_cost;
+
+--SELECT replacement_cost, rental_rate, MIN(length) FROM film 
+--GROUP BY replacement_cost, rental_rate;
+
+
+--SELECT replacement_cost, rental_rate, MIN(length) FROM film 
+--GROUP BY replacement_cost, rental_rate
+--ORDER BY MIN(length);
+
+--SELECT replacement_cost, rental_rate, MIN(length) FROM film 
+--GROUP BY replacement_cost, rental_rate
+--ORDER BY MIN(length)
+--LIMIT 8;
