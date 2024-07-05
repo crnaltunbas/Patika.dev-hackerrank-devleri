@@ -136,3 +136,18 @@ WHERE first_name = 'Penelope' AND last_name = 'Monroe' OR first_name = 'Joe';
 --SELECT * FROM country
 --OFFSET 6
 --LIMIT 4; 
+
+
+-- AGGREGATE FONKSİYONLAR (MIN, MAX,SUM, AVG)
+
+--SELECT MAX(replacement_cost) FROM film;
+--SELECT MIN (rental_rate) FROM film;
+--SELECT AVG (length) FROM film;
+
+--SELECT ROUND(AVG (length),3) FROM film;
+--SELECT SUM(rental_rate) FROM film;
+
+--SELECT MAX(length), MIN(length), SUM(replacement_cost) FROM film;
+
+--SELECT MAX (length) FROM film
+--where rental_rate = 4.99;
