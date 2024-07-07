@@ -214,3 +214,18 @@ WHERE first_name = 'Penelope' AND last_name = 'Monroe' OR first_name = 'Joe';
 
 
 
+CREATİNG TABLE
+
+-- CREATE TABLE <table_name> (
+-- 	<column_name> <data_type> <constraint>,
+-- 	...
+-- 	<column_name> <data_type> <constraint>;
+-- )
+
+CREATE TABLE author(
+	id SERİAL PRIMARY KEY
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	email VARCHAR(100),
+	birthday DATE
+);
