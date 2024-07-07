@@ -417,6 +417,16 @@ UPDATE TABLE
 
 
 
+--DELETE
+
+-- DELETE FROM <table_name>
+-- WHERE condition;
+
+
+-- delete from  author 
+-- where id between 106 and 205
+
+select * from author 
 
 
 
