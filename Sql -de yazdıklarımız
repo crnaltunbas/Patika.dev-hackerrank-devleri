@@ -243,3 +243,34 @@ ADDİNG VALUES
 -- 	('Zygmunt', 'Bauman', 'zygmunt@ali.com', '1911-07-12');
 	
 -- select * from author;
+
+
+-- Bir tabloyu kullanarak yeni tablo oluşturmak (tek bir satır aktarıldı yeni tabloya)
+-- CREATE TABLE author2 (LIKE author);
+
+-- SELECT * FROM author2;
+
+
+-- INSERT INTO author2
+-- SELECT * FROM author
+-- WHERE first_name = 'Sabahattin';
+
+
+-- SELECT * FROM author2; 
+
+--yeni tablo önceki tablonun aynısı olacak şekilde oluşturuldu
+-- CREATE TABLE author3 AS
+-- SELECT * FROM author;
+
+-- SELECT * FROM author3
+
+-- DELETE TABLE 
+
+-- DROP TABLE  author3;
+-- DROP TABLE author4; --böyle bir tablo olmadığı için hata verir
+-- DROP TABLE IF EXISTS author4; -- böyle bir tablo olmadığı halde hata göstermez
+
+
+
+
+
