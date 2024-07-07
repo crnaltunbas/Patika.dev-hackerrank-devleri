@@ -271,6 +271,152 @@ ADDİNG VALUES
 -- DROP TABLE IF EXISTS author4; -- böyle bir tablo olmadığı halde hata göstermez
 
 
+SQL üzerinde veri eklemek oldaukça zahmetli olduğundan macrooo gibi data generator kullanıp bize hazır kod üretip bunu query ye yapıştırarak veri eklemesi yapabiliriz
+
+
+
+-- insert into author (first_name, last_name, email, birthday) values ('Shelia', 'Anderbrugge', 'sanderbrugge0@irs.gov', '1988-11-14');
+-- insert into author (first_name, last_name, email, birthday) values ('Boony', 'MacKilroe', 'bmackilroe1@wikispaces.com', '1920-06-08');
+-- insert into author (first_name, last_name, email, birthday) values ('Abramo', 'Argue', 'aargue2@skype.com', '1976-09-23');
+-- insert into author (first_name, last_name, email, birthday) values ('Felix', 'Glendza', 'fglendza3@aboutads.info', '1901-08-29');
+-- insert into author (first_name, last_name, email, birthday) values ('Peria', 'Chidler', 'pchidler4@gizmodo.com', '1954-08-28');
+-- insert into author (first_name, last_name, email, birthday) values ('Harri', 'Morrow', 'hmorrow5@ucoz.com', '1915-09-17');
+-- insert into author (first_name, last_name, email, birthday) values ('Marcelo', 'Gabey', 'mgabey6@biglobe.ne.jp', '1958-11-29');
+-- insert into author (first_name, last_name, email, birthday) values ('Cassie', 'Lille', 'clille7@nps.gov', '1956-06-25');
+-- insert into author (first_name, last_name, email, birthday) values ('Nat', 'Hefford', 'nhefford8@list-manage.com', '1966-12-26');
+-- insert into author (first_name, last_name, email, birthday) values ('Kele', 'de Guerre', 'kdeguerre9@gmpg.org', '1970-12-28');
+-- insert into author (first_name, last_name, email, birthday) values ('Rickard', 'Claridge', 'rclaridgea@flavors.me', '1937-06-11');
+-- insert into author (first_name, last_name, email, birthday) values ('Alberta', 'Vamplus', null, '1901-05-11');
+-- insert into author (first_name, last_name, email, birthday) values ('Henrik', 'McKeachie', 'hmckeachiec@51.la', '1929-01-06');
+-- insert into author (first_name, last_name, email, birthday) values ('Linnea', 'Middlebrook', 'lmiddlebrookd@uiuc.edu', '1971-07-11');
+-- insert into author (first_name, last_name, email, birthday) values ('Jedidiah', 'Leyes', 'jleyese@cmu.edu', '1946-06-25');
+-- insert into author (first_name, last_name, email, birthday) values ('Alden', 'Poel', 'apoelf@gizmodo.com', '1918-05-28');
+-- insert into author (first_name, last_name, email, birthday) values ('Krishna', 'Venard', 'kvenardg@linkedin.com', '1902-04-10');
+-- insert into author (first_name, last_name, email, birthday) values ('Bret', 'Rubinov', 'brubinovh@qq.com', '1996-08-15');
+-- insert into author (first_name, last_name, email, birthday) values ('Leo', 'Kibbey', 'lkibbeyi@hud.gov', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Worthy', 'Seymer', 'wseymerj@uiuc.edu', '1985-03-07');
+-- insert into author (first_name, last_name, email, birthday) values ('Gonzalo', 'McEneny', 'gmcenenyk@adobe.com', '1972-06-06');
+-- insert into author (first_name, last_name, email, birthday) values ('Gareth', 'Petyankin', 'gpetyankinl@shop-pro.jp', '1939-03-08');
+-- insert into author (first_name, last_name, email, birthday) values ('Lyssa', 'Dulanty', 'ldulantym@illinois.edu', '1951-06-23');
+-- insert into author (first_name, last_name, email, birthday) values ('Lauri', 'Giovannardi', 'lgiovannardin@yahoo.com', '1918-05-16');
+-- insert into author (first_name, last_name, email, birthday) values ('Cheslie', 'Chawner', 'cchawnero@wp.com', '1998-06-02');
+-- insert into author (first_name, last_name, email, birthday) values ('Clyve', 'Giggs', 'cgiggsp@google.com.hk', '1909-07-05');
+-- insert into author (first_name, last_name, email, birthday) values ('Hieronymus', 'Beale', 'hbealeq@live.com', '1910-12-05');
+-- insert into author (first_name, last_name, email, birthday) values ('Bianka', 'Abrahamsohn', 'babrahamsohnr@51.la', '1930-01-07');
+-- insert into author (first_name, last_name, email, birthday) values ('Leyla', 'George', 'lgeorges@tumblr.com', '1974-03-28');
+-- insert into author (first_name, last_name, email, birthday) values ('Mikkel', 'Corsham', 'mcorshamt@sohu.com', '1967-11-18');
+-- insert into author (first_name, last_name, email, birthday) values ('Chrissie', 'Corpe', 'ccorpeu@pen.io', '1941-10-24');
+-- insert into author (first_name, last_name, email, birthday) values ('Mureil', 'Sacks', 'msacksv@gizmodo.com', '1975-02-22');
+-- insert into author (first_name, last_name, email, birthday) values ('Toddie', 'Hurworth', 'thurworthw@topsy.com', '1966-11-14');
+-- insert into author (first_name, last_name, email, birthday) values ('Susi', 'Guitte', null, '1976-06-18');
+-- insert into author (first_name, last_name, email, birthday) values ('Giorgi', 'Buchanan', null, '1912-08-22');
+-- insert into author (first_name, last_name, email, birthday) values ('Haywood', 'Spatari', 'hspatariz@cdc.gov', '1964-04-29');
+-- insert into author (first_name, last_name, email, birthday) values ('Claus', 'Houlden', 'choulden10@so-net.ne.jp', '1956-07-23');
+-- insert into author (first_name, last_name, email, birthday) values ('Yank', 'Steynor', 'ysteynor11@moonfruit.com', '1947-06-24');
+-- insert into author (first_name, last_name, email, birthday) values ('Kiley', 'Pheasant', null, null);
+-- insert into author (first_name, last_name, email, birthday) values ('Jesus', 'Prestie', 'jprestie13@ftc.gov', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Dall', 'Gleaves', 'dgleaves14@ox.ac.uk', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Lane', 'Aire', 'laire15@bing.com', '1925-02-19');
+-- insert into author (first_name, last_name, email, birthday) values ('Maia', 'Kyme', 'mkyme16@paypal.com', '1966-07-20');
+-- insert into author (first_name, last_name, email, birthday) values ('Lynelle', 'Oddie', 'loddie17@ucla.edu', '1995-05-19');
+-- insert into author (first_name, last_name, email, birthday) values ('Leandra', 'Givens', 'lgivens18@harvard.edu', '1915-05-09');
+-- insert into author (first_name, last_name, email, birthday) values ('Ruby', 'Dallimore', 'rdallimore19@epa.gov', '1964-09-05');
+-- insert into author (first_name, last_name, email, birthday) values ('Joby', 'Featherstonhaugh', 'jfeatherstonhaugh1a@un.org', '1994-10-20');
+-- insert into author (first_name, last_name, email, birthday) values ('Gustavus', 'Murgatroyd', 'gmurgatroyd1b@homestead.com', '1952-03-26');
+-- insert into author (first_name, last_name, email, birthday) values ('Ingaborg', 'Issacson', 'iissacson1c@smugmug.com', '1940-05-03');
+-- insert into author (first_name, last_name, email, birthday) values ('Coralie', 'Abramski', 'cabramski1d@tumblr.com', '1944-10-08');
+-- insert into author (first_name, last_name, email, birthday) values ('Lombard', 'Mattielli', 'lmattielli1e@examiner.com', '1953-12-02');
+-- insert into author (first_name, last_name, email, birthday) values ('Dulci', 'Pischof', 'dpischof1f@yahoo.com', '1994-01-24');
+-- insert into author (first_name, last_name, email, birthday) values ('Max', 'Cullinan', 'mcullinan1g@admin.ch', '1967-05-16');
+-- insert into author (first_name, last_name, email, birthday) values ('Filide', 'Boulter', 'fboulter1h@admin.ch', '1919-06-06');
+-- insert into author (first_name, last_name, email, birthday) values ('Colleen', 'Delany', 'cdelany1i@adobe.com', '1939-07-04');
+-- insert into author (first_name, last_name, email, birthday) values ('Alexandr', 'Sarginson', null, '1912-10-15');
+-- insert into author (first_name, last_name, email, birthday) values ('Ceciley', 'Waddoups', 'cwaddoups1k@gnu.org', '1946-01-09');
+-- insert into author (first_name, last_name, email, birthday) values ('Vania', 'Bedome', 'vbedome1l@people.com.cn', '1967-06-20');
+-- insert into author (first_name, last_name, email, birthday) values ('Melina', 'Menault', 'mmenault1m@forbes.com', '1925-12-25');
+-- insert into author (first_name, last_name, email, birthday) values ('De witt', 'Mingardi', 'dmingardi1n@upenn.edu', '1969-12-07');
+-- insert into author (first_name, last_name, email, birthday) values ('Marlie', 'Harhoff', null, '1921-12-18');
+-- insert into author (first_name, last_name, email, birthday) values ('Addie', 'Legg', null, '1981-05-04');
+-- insert into author (first_name, last_name, email, birthday) values ('Syd', 'Snashall', null, null);
+-- insert into author (first_name, last_name, email, birthday) values ('Anastasia', 'Smickle', 'asmickle1r@artisteer.com', '1947-10-15');
+-- insert into author (first_name, last_name, email, birthday) values ('Thebault', 'Boerderman', 'tboerderman1s@desdev.cn', '1908-05-21');
+-- insert into author (first_name, last_name, email, birthday) values ('Heinrik', 'O''Lennane', null, null);
+-- insert into author (first_name, last_name, email, birthday) values ('Juliette', 'Issacoff', 'jissacoff1u@live.com', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Clayson', 'Cotterrill', 'ccotterrill1v@usa.gov', '1906-12-05');
+-- insert into author (first_name, last_name, email, birthday) values ('Cally', 'Alfonzo', 'calfonzo1w@guardian.co.uk', '1963-07-06');
+-- insert into author (first_name, last_name, email, birthday) values ('Genevra', 'Rookledge', 'grookledge1x@nps.gov', '1996-11-05');
+-- insert into author (first_name, last_name, email, birthday) values ('Courtnay', 'Grishanin', 'cgrishanin1y@over-blog.com', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Lek', 'Woodburn', null, '1988-01-11');
+-- insert into author (first_name, last_name, email, birthday) values ('Dido', 'Briskey', 'dbriskey20@flickr.com', '1917-12-19');
+-- insert into author (first_name, last_name, email, birthday) values ('Petronilla', 'Waddup', 'pwaddup21@list-manage.com', '1932-12-26');
+-- insert into author (first_name, last_name, email, birthday) values ('Trina', 'Hamman', 'thamman22@infoseek.co.jp', '1989-07-01');
+-- insert into author (first_name, last_name, email, birthday) values ('Noland', 'Ambrosch', 'nambrosch23@nationalgeographic.com', '1951-09-20');
+-- insert into author (first_name, last_name, email, birthday) values ('Carlyle', 'Negus', 'cnegus24@scientificamerican.com', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Lawrence', 'Katz', null, '1988-01-14');
+-- insert into author (first_name, last_name, email, birthday) values ('Allyn', 'Bruhnsen', 'abruhnsen26@fastcompany.com', '1968-02-07');
+-- insert into author (first_name, last_name, email, birthday) values ('Jude', 'Copcote', 'jcopcote27@imdb.com', '1925-08-05');
+-- insert into author (first_name, last_name, email, birthday) values ('Cirillo', 'Dannohl', 'cdannohl28@ezinearticles.com', '1962-05-18');
+-- insert into author (first_name, last_name, email, birthday) values ('Clarance', 'Brolan', 'cbrolan29@businessweek.com', '1911-03-06');
+-- insert into author (first_name, last_name, email, birthday) values ('Rutledge', 'Mc Corley', 'rmccorley2a@nps.gov', '1999-12-08');
+-- insert into author (first_name, last_name, email, birthday) values ('Carly', 'Bunton', 'cbunton2b@booking.com', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Angil', 'MacNeish', 'amacneish2c@tiny.cc', '1938-10-06');
+-- insert into author (first_name, last_name, email, birthday) values ('Laetitia', 'Redfern', 'lredfern2d@diigo.com', '1925-11-05');
+-- insert into author (first_name, last_name, email, birthday) values ('Fraze', 'Gabbitus', 'fgabbitus2e@clickbank.net', '1941-02-01');
+-- insert into author (first_name, last_name, email, birthday) values ('Ardeen', 'Small', 'asmall2f@mlb.com', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Sonni', 'Furze', 'sfurze2g@baidu.com', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Lainey', 'Hiscocks', 'lhiscocks2h@mit.edu', '1974-11-14');
+-- insert into author (first_name, last_name, email, birthday) values ('Morrie', 'Aarons', 'maarons2i@rakuten.co.jp', '1935-09-20');
+-- insert into author (first_name, last_name, email, birthday) values ('Jerrylee', 'Gosnoll', 'jgosnoll2j@wix.com', '1984-04-27');
+-- insert into author (first_name, last_name, email, birthday) values ('Philis', 'Kelling', 'pkelling2k@alibaba.com', null);
+-- insert into author (first_name, last_name, email, birthday) values ('Cris', 'Toulamain', null, '1944-12-28');
+-- insert into author (first_name, last_name, email, birthday) values ('Reynard', 'Durrant', 'rdurrant2m@devhub.com', '1962-04-07');
+-- insert into author (first_name, last_name, email, birthday) values ('Gladys', 'Barnewell', 'gbarnewell2n@gizmodo.com', '1986-10-31');
+-- insert into author (first_name, last_name, email, birthday) values ('Idalia', 'Eastcourt', 'ieastcourt2o@ibm.com', '1901-09-11');
+-- insert into author (first_name, last_name, email, birthday) values ('Antone', 'Westwick', 'awestwick2p@livejournal.com', '1985-03-11');
+-- insert into author (first_name, last_name, email, birthday) values ('Rochella', 'Banasik', 'rbanasik2q@cbslocal.com', '1924-07-03');
+-- insert into author (first_name, last_name, email, birthday) values ('Wallie', 'Burnell', 'wburnell2r@nsw.gov.au', '1942-09-04');
+
+-- select * from author
+
+UPDATE TABLE 
+
+
+-- UPDATE <table_name>
+-- SET column1 = value1,
+--     column2 = value2,
+-- 	...
+-- WHERE condition;
+
+
+
+İD YE GÖRE TÜM SÜTUNLARI GÜNCELLEDİK 
+-- UPDATE author
+-- SET first_name = 'Ceren',
+-- 	last_name = 'Altunbas',
+-- 	email = 'crnaltunbas35@gmail.com' ,
+-- 	birthday = '2002-03-28'
+-- -- SHİFT + TAB TUŞLAMASI İLE KOD DÜZENLENEBİLİR.
+-- WHERE id = 10;
+
+-- SELECT * FROM author;
+
+
+ŞART KOYARAK BELLİ BAŞLI ŞEYLERDE GÜNCELLEME YAPTIK 
+-- UPDATE author
+-- SET first_name = 'xxxxx',
+-- 	last_name = 'yyyyy'
+-- WHERE first_name LIKE 'V%';
+
+-- select * from author;
+
+ŞART KOYDUK VE YAPTIĞUMUZ GÜNCELEME SONUCU NU HEMEN TABLODA GÖREBİLMEK İÇİN RETURNİNG ANAHTAR KELİMESİNİ KULLANDIK 
+-- UPDATE author 
+-- SET last_name = 'UPDATE'
+-- WHERE first_name = 'Ruby'
+-- RETURNING * ;
+
+
+
 
 
 
