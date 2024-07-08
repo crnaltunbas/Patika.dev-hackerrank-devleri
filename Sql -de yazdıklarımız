@@ -516,3 +516,27 @@ Bu yüzden nul olan o veriyi sildik
 -- SELECT * FROM users;
 
 Silinen veri yerine böyle bir ekleme yaptık.
+
+
+UNİQUE
+
+NULL- daki aynı yöntemi uyguladık.
+-- INSERT INTO users(username, email, age)
+-- VALUES
+-- 	('tester2', 'tester@gmail.com', 44 );
+-- SELECT * FROM users;
+
+-- ALTER TABLE users 
+-- ADD UNIQUE(email); -- Hata aldık çünkü unique olmayan veri var burada
+
+-- SELECT * FROM users
+
+-- ALTER TABLE users 
+-- ADD UNIQUE(email);
+
+
+-- INSERT INTO users(username, email, age)
+-- VALUES
+-- 	('tester3', 'tester3@gmail.com', 55 );
+-- SELECT * FROM users;	
+
