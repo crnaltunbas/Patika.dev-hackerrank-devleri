@@ -540,3 +540,63 @@ NULL- daki aynı yöntemi uyguladık.
 -- 	('tester3', 'tester3@gmail.com', 55 );
 -- SELECT * FROM users;	
 
+
+CHECK
+
+--VAROLAN TABLODA DEĞİŞİKLİK
+
+-- INSERT INTO users(username, email, age)
+-- VALUES
+-- 	('gamer3', 'gamer3@gmail.com', -22 );
+-- SELECT * FROM users;
+
+-- ALTER TABLE users 
+-- ADD CHECK (age>18);
+
+
+
+-- DELETE FROM users 
+-- WHERE id = 9;
+-- SELECT * FROM users;
+
+-- ALTER TABLE users 
+-- ADD CHECK (age>18);
+
+
+-- INSERT INTO users(username, email, age)
+-- VALUES
+-- 	('gamer4', 'gamer4@gmail.com', -27 );
+
+
+
+-- INSERT INTO users(username, email, age)
+-- VALUES
+-- 	('gamer4', 'gamer4@gmail.com', 27 );
+
+
+ -- SELECT * FROM users;
+
+--YENİ TABLO OLUŞTURUP CHECK İFADESİNİ KULLANARAK
+
+
+-- CREATE TABLE products (
+--     product_no integer,
+--     name text,
+--     price numeric CHECK (price > 0),
+--     discounted_price numeric CHECK (discounted_price > 0),
+--     CHECK (price > discounted_price)
+-- );
+
+
+-- INSERT INTO products(product_no, name, price, discounted_price)
+-- VALUES
+-- 	(1, 'test product', 12, 10);
+
+-- SELECT * FROM products
+
+
+
+
+
+
+
