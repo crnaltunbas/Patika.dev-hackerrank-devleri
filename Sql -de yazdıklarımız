@@ -474,3 +474,45 @@ LERDİ YANİ FOREİGN KEY-LERDİ BU YÜZDEN BUNLARI KULLANDIK.
 
 
 
+NULL & ALTER
+
+-- CREATE TABLE users (
+-- 	id SERIAL PRIMARY KEY,
+-- 	username VARCHAR(20),
+-- 	email VARCHAR(50),
+-- 	age INTEGER
+-- );
+-- SELECT * FROM users;
+
+
+-- INSERT INTO users(username, email, age)
+-- VALUES
+-- 	('tester', 'tester@gmail.com', 23 );
+-- SELECT * FROM users
+
+
+-- INSERT INTO users(email, age)
+-- VALUES
+-- 	('gamer@gmail.com', 35 );
+-- SELECT * FROM users
+öncesinde herhangi bir kısıtlama yapılmadığı için çıktı username kısmında null olacaktır. Bunu değiştirmek için
+alter yöntemi uygulanabilir ancak bizim elimizde null olan veri olduğundan hata alırız
+
+-- ALTER TABLE users
+-- ALTER COLUMN username
+-- SET NOT NULL;  -- BURADA HATA ALDIK ÇÜNKÜ ŞU AN ELİMİZDE NULL OLAN VERİ VAR O ZAMAN ORAYI SİLELİM
+
+-- DELETE FROM users 
+-- WHERE username IS NULL
+
+-- SELECT * FROM users;
+
+Bu yüzden nul olan o veriyi sildik
+
+
+-- INSERT INTO users(username, email, age)
+-- VALUES
+-- 	('', 'gamer@gmail.com', 35 );
+-- SELECT * FROM users;
+
+Silinen veri yerine böyle bir ekleme yaptık.
