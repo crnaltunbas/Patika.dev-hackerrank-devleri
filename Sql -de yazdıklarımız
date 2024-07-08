@@ -431,6 +431,8 @@ select * from author
 
 PRIMARY KEY & FOREİGN KEY
 
+
+İLK OLARAK BOOK ADLI AUTHOR TABLOSUNUN İD-SİNİ REFERANS ALAN BİR TABLO OLUŞTURDUK
 -- CREATE TABLE book(
 -- 	id SERIAL PRIMARY KEY,
 -- 	title VARCHAR(100) NOT NULL,
@@ -441,6 +443,34 @@ PRIMARY KEY & FOREİGN KEY
 -- SELECT * FROM book;
 
 
+ SONRASINDA  VERİLER EKLEDİK 
+-- insert into book (title, page_number, author_id) values ('White Banners', 62, 1);
+-- insert into book (title, page_number, author_id) values ( 'Saving Shiloh', 580, 10); 
+-- insert into book (title, page_number, author_id ) values ('Abe Lincoln in Illinois', 105, 7); 
+-- insert into book (title, page_number, author_id ) values ('Apache Territory' , 286, 1);
+-- insert into book (title, page_number, author_id ) values ( 'out 1: Spectre', 402, 9);  
+-- insert into book (title, page_number, author_id ) values ('B.U.S.T.E.D (Everybody Loves Sunshine) (Busted) ' , 84, 10);
+-- insert into book (title, page_number, author_id) values ( 'Father Sergius (Otets Sergiy)', 265, 9);
+-- insert into book (title, page_number, author_id) values ( 'It Started in Naples ' ,838, 8);  
+-- insert into book (title, page_number, author_id ) values ( 'Return to Homs, The', 580, 9); 
+-- insert into book (title, page_number, author_id ) values ('Cutie Honey', 788, 8); 
+-- insert into book (title, page_number, author_id ) values ('Jackass 3.5', 834, 1); 
+-- insert into book (title, page_number, author_id) values ('Baby On Board', 339, 7); 
+-- insert into book (title, page_number, author_id) values ('making Plans for Lena (No ma fille tu n''iras pas danser)',375,7);
+
+-- select * from book ;
+
+SONRASINDA BU VERİLERİN BELİRLİ ŞARTLARI SAĞLAYANLARINI ÇAĞIRDIK
+
+-- SELECT * FROM book
+-- WHERE author_id = 1;
+
+EN SON OLARAKTA DEDİK Kİ BEN AUTHOR TABLOSUNDA YAZARLARI GÖRÜRKEN YANINDA YAZDIĞI KİTAPLARIDA GÖREYİM DEDİK VE 
+BU İKİ TABLOYU BİRLEŞTİRDİK VE BUNUN İÇİNDE JOİN ANAHTAR KELİMESİNİ KULLANDIK. BU İKİ TABLO ARASINDA İLİŞKİ SAĞLAYAN KEY İD 
+LERDİ YANİ FOREİGN KEY-LERDİ BU YÜZDEN BUNLARI KULLANDIK.
+
+-- SELECT * FROM book 
+-- JOIN author ON author.id = book.author_id;
 
 
 
