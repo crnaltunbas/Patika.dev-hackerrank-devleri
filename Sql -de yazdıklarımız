@@ -671,7 +671,31 @@ FULL JOIN book ON author.id = book.author_id
 WHERE (book.id IS NULL OR author.id IS NULL);
 
 
+UNION
+-- (
+-- SELECT * FROM book
+-- ORDER BY page_number DESC
+-- LIMIT 5
+-- )
+-- UNION
+-- (
+-- SELECT * FROM book
+-- ORDER BY title
+-- LIMIT 5
+-- )
+unıon da kesişen elemanları göstermez union all ile aradaki fark budur
 
+(
+SELECT * FROM book
+ORDER BY page_number DESC
+LIMIT 5
+)
+UNION ALL
+(
+SELECT * FROM book
+ORDER BY title
+LIMIT 5
+)
 
 
 
