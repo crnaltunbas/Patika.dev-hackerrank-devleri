@@ -698,4 +698,16 @@ LIMIT 5
 )
 
 
+(
+	SELECT id, email FROM author
+)
+UNION
+(
+	SELECT id, title FROM book
+);
+
+--unıon operatörlerinde istenilen sütunların  sayısı aynı olmalıdır.
+
+--unıon operatörlerinde istenilen sütunların veri tipi aynı olmalıdır.
+
 
