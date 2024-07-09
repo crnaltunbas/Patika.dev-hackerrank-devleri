@@ -616,6 +616,60 @@ LEFT JOIN
 -- LEFT JOIN author ON author.id = book.author_id; 
 
 
+RİGHT JOIN
+
+-- SELECT first_name, last_name, title FROM book
+-- RIGHT JOIN author ON author.id = book.author_id; 
+
+-- SELECT first_name, last_name, title FROM book
+-- RIGHT OUTER JOIN author ON author.id = book.author_id; 
+-- RİGHT OUTER JOIN İLE RİGHT JOİN AYNI ŞEYDİR
+
+
+-- SELECT first_name, last_name, title FROM book
+-- LEFT JOIN author ON author.id = book.author_id;
+
+
+-- SELECT first_name, last_name, title FROM author
+-- RIGHT JOIN book ON author.id = book.author_id; 
+-- BU QUERY İLE  ÜSTTEKİ QUERY AYNI ŞEYDİR.
+
+
+FULL JOIN
+
+-- SELECT first_name, last_name, title FROM book
+-- FULL JOIN author ON author.id = book.author_id;
+
+-- SELECT * FROM book
+-- FULL JOIN author ON author.id = book.author_id;
+
+-- SELECT * FROM author
+-- FULL JOIN book ON author.id = book.author_id;
+
+
+-- SELECT * FROM author
+-- FULL JOIN book ON author.id = book.author_id
+-- WHERE (book.id IS NOT NULL AND author.id IS NOT NULL);
+
+
+
+-- SELECT * FROM book
+-- FULL JOIN author ON author.id = book.author_id
+
+
+
+-- SELECT * FROM book
+-- INNER JOIN author ON author.id = book.author  _id
+-- Biz full join yapdığımızda id ler null olmasını istemiyorsak
+--inner join uyhulamalıyız.
+
+
+
+--tablolarda ortak olmayan verileri görmek için aşağıdakı kodu uygulamalıyız.
+SELECT * FROM author
+FULL JOIN book ON author.id = book.author_id
+WHERE (book.id IS NULL OR author.id IS NULL);
+
 
 
 
