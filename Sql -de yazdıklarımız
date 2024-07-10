@@ -771,7 +771,22 @@ WHERE title = 'out 1: Spectre'
 );
 
 
+ALT SORGULAR & JOİN
 
+Kitap sayfa sayısı, ortalama kitap sayfa sayısından fazla olan kitap isimlerini, yazar isim ve soy isimleri ile birlikte sıralayalım.
+
+select book.title, author.first_name, author.last_name, book.page_number from author
+inner join book on author.id =  book.author_id
+where book.page_number > (select avg(book.page_number ) from book)
+order by book.page_number desc
+
+
+Film uzunluğu en fazla olan filmlerin isimlerini, uzunluğunu, actor isim ve soy isimleri ile birlikte yazdıralım
+
+select film.title, film.length, actor.first_name, actor.last_name from actor
+join film_actor on film_actor.actor_id = actor.actor_id
+join film on film.film_id = film_actor.film_id
+order by film.length desc
 
 
 
