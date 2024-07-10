@@ -737,3 +737,43 @@ SELECT * FROM book
 ORDER BY title
 LIMIT 5
 )
+
+
+SUBQUERY
+-- SELECT * FROM book
+-- WHERE page_number > 400
+
+-- SELECT page_number FROM book
+-- WHERE title = 'out 1: Spectre'
+
+-- SELECT * FROM book
+-- WHERE page_number >
+-- (
+-- SELECT page_number FROM book
+-- WHERE title = 'out 1: Spectre'
+-- );
+
+
+-- SELECT title, page_number, (SELECT MAX(page_number)FROM book)
+-- FROM book
+-- WHERE page_number >
+-- (
+-- SELECT page_number FROM book
+-- WHERE title = 'out 1: Spectre'
+-- );
+
+SELECT title, page_number, (SELECT MAX(page_number)FROM book),(SELECT MAX(page_number)FROM book)- page_number AS differ
+FROM book
+WHERE page_number >
+(
+SELECT page_number FROM book
+WHERE title = 'out 1: Spectre'
+);
+
+
+
+
+
+
+
+
